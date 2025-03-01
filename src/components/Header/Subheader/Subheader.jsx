@@ -1,0 +1,27 @@
+import React from 'react';
+import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
+
+const Subheader = () => {
+    return (
+        <div className="subheader h-[40px] bg-main-blue flex items-center">
+            <div className="container mx-auto px-6">
+                <ul className='flex flex-row text-white justify-end items-center'>
+                    <li className='mr-8 flex items-center'>
+                        <FaMapMarkerAlt className="mr-2" /> {/* Ikona adresu */}
+                        <a href="#adres" className="text-sm">ul. Turkusowa 20, Szczecin 71-111</a>
+                    </li>
+                    <li className='mr-8 flex items-center'>
+                        <FaEnvelope className="mr-2" /> {/* Ikona emaila */}
+                        <a href="mailto:contact@rb-service.pl" className="text-sm">contact@rb-service.pl</a>
+                    </li>
+                    <li className='flex items-center'>
+                        <FaPhoneAlt className="mr-2" /> {/* Ikona telefonu */}
+                        <a href="tel:722-222-111" className="text-sm">722-222-111</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    );
+};
+
+export default Subheader;
