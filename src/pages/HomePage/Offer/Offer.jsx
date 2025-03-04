@@ -1,20 +1,20 @@
 import React from "react";
 import { motion } from "framer-motion";
 import OfferCard from './OfferCards/OfferCard';
-import img1 from "../../../assets/img/offer/Service 1.jpg";
-import img2 from "../../../assets/img/offer/Service 2.jpg";
-import img3 from "../../../assets/img/offer/Service 3.jpg";
-import img4 from "../../../assets/img/offer/Service 4.png";
-import img5 from "../../../assets/img/offer/Service 5.jpg";
-import img6 from "../../../assets/img/offer/Service 6.jpg";
+import img1 from "../../../assets/img/offer/1.png";
+import img2 from "../../../assets/img/offer/2.png";
+import img3 from "../../../assets/img/offer/3.png";
+import img4 from "../../../assets/img/offer/4.png";
+import img5 from "../../../assets/img/offer/5.png";
+import img6 from "../../../assets/img/offer/6.png";
 
 const offer = [
-    { id: 1, title: "Malowanie", color: "#EC2525", img: img1 },
-    { id: 2, title: "Szpachlowanie", color: "#FFE37F", img: img2 },
-    { id: 3, title: "Zabudowa GK", color: "#F4E1C0", img: img3 },
-    { id: 4, title: "Układanie płytek", color: "#F2E2D5", img: img4 },
-    { id: 5, title: "Układanie paneli", color: "#CC8448", img: img5 },
-    { id: 6, title: "Montaż listw przypodłogowych", color: "#B7C6B1", img: img6 },
+    { id: 1, title: "Malowanie", img: img1 },
+    { id: 2, title: "Szpachlowanie", img: img2 },
+    { id: 3, title: "Zabudowa GK", img: img3 },
+    { id: 4, title: "Układanie płytek", img: img4 },
+    { id: 5, title: "Układanie paneli", img: img5 },
+    { id: 6, title: "Montaż listw przypodłogowych", img: img6 },
 ];
 
 const Offer = () => {
@@ -43,7 +43,7 @@ const Offer = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: index * 0.2 }}
                         >
-                            <OfferCard img={el.img} title={el.title} color={el.color} />
+                            <OfferCard img={el.img} title={el.title} />
                         </motion.div>
                     ))}
                 </div>

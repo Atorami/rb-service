@@ -7,16 +7,16 @@ const Subheader = () => {
             <div className="container mx-auto px-6">
                 <ul className='flex flex-row text-white justify-end items-center'>
                     <li className='mr-8 flex items-center'>
-                        <FaMapMarkerAlt className="mr-2" /> {/* Ikona adresu */}
-                        <a href="#adres" className="text-sm">ul. Turkusowa 20, Szczecin 71-111</a>
+                        <FaMapMarkerAlt className="mr-2" />
+                        <a href="#adres" className="text-sm">ul. Turkusowa 15a/9, Szczecin 70-778</a>
                     </li>
                     <li className='mr-8 flex items-center'>
-                        <FaEnvelope className="mr-2" /> {/* Ikona emaila */}
+                        <FaEnvelope className="mr-2" />
                         <a href="mailto:contact@rb-service.pl" className="text-sm">contact@rb-service.pl</a>
                     </li>
                     <li className='flex items-center'>
-                        <FaPhoneAlt className="mr-2" /> {/* Ikona telefonu */}
-                        <a href="tel:722-222-111" className="text-sm">722-222-111</a>
+                        <FaPhoneAlt className="mr-2" />
+                        <a href="tel:511-394-565" className="text-sm">+48 511-394-565</a>
                     </li>
                 </ul>
             </div>

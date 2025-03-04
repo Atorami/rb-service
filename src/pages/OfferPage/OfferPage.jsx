@@ -91,7 +91,8 @@ const OfferPage = () => {
                 <motion.button
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.3 }}
-                    className="bg-main-red hover:bg-red-600 text-white font-bold py-4 px-10 rounded-full text-lg transition duration-300"
+                    onClick={() => window.location.href = 'tel:+48511394565'}
+                    className="bg-main-red hover:bg-red-600 text-white font-bold py-4 px-10 rounded-full text-lg transition duration-300 cursor-pointer"
                 >
                     Zapytaj już teraz
                 </motion.button>

@@ -35,6 +35,7 @@ const CallToAction = () => {
                     className="bg-white text-main-red py-3 px-8 rounded-full text-lg font-semibold hover:bg-gray-100 transition-colors duration-300"
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.3 }}
+                    onClick={() => window.location.href = 'tel:+48511394565'}
                 >
                     Skontaktuj się
                 </motion.a>

@@ -71,11 +71,11 @@ const ContactPage = () => {
                             <div className="mb-4">
                                 <div className="flex items-center mb-2">
                                     <FaMapMarkerAlt className="mr-2 text-main-red" />
-                                    <p><span className="font-semibold">ADRES:</span> ul. Turkusowa 15a, 70-778 Szczecin</p>
+                                    <p><span className="font-semibold">ADRES:</span> ul. Turkusowa 15a/9, 70-778 Szczecin</p>
                                 </div>
                                 <div className="flex items-center mb-2">
                                     <FaPhoneAlt className="mr-2 text-main-red" />
-                                    <p><span className="font-semibold">Tel.:</span> +48 722-222-111</p>
+                                    <p><span className="font-semibold">Tel.:</span> +48 511-394-565</p>
                                 </div>
                                 <div className="flex items-center mb-2">
                                     <FaEnvelope className="mr-2 text-main-red" />

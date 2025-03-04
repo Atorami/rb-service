@@ -54,9 +54,11 @@ const About = () => {
                             Współpraca ze mną to gwarancja solidnego wykonania i najwyższych standardów. Zapraszam do kontaktu, aby omówić Twój projekt i przekonać się o moim profesjonalizmie.
                         </p>
                         <motion.button
-                            whileHover={{ scale: 1.05 }}
-                            transition={{ duration: 0.3 }}
-                            className="bg-main-red text-white py-3 px-8 rounded-full text-lg font-semibold hover:bg-red-600 transition-colors duration-300"
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1, delay: 1.6 }}
+                            onClick={() => window.location.href = 'tel:+48511394565'}
+                            className="bg-main-red text-white py-3 px-8 rounded-full text-lg font-semibold hover:bg-red-600 transition-colors duration-300 cursor-pointer"
                         >
                             Skontaktuj się
                         </motion.button>
