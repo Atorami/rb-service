@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaCheckCircle, FaLightbulb, FaRocket, FaUserTie, FaHammer, FaTools, FaPaintBrush } from 'react-icons/fa'; // Изменены иконки
-
+import { FaCheckCircle, FaLightbulb, FaClock, FaUserTie, FaTools, FaPaintBrush } from 'react-icons/fa';
 import bgImage from '../../assets/img/about/about_bg3.jpg';
 import img from '../../assets/img/about/about_img.jpeg';
 
@@ -70,44 +69,48 @@ const AboutPage = () => {
                     transition={{ duration: 0.6, delay: 0.8 }}
                     className="mt-12 pt-8 text-center bg-gray-100 p-8 rounded-lg shadow-md"
                 >
-                    <h3 className="text-2xl font-semibold mb-6 text-gray-800">Cele i Wartości </h3>
+                    <h3 className="text-2xl font-semibold mb-6 text-gray-800">Cele i Wartości</h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         <div className="p-6 bg-white rounded-lg shadow-md flex flex-col items-center">
-                            <FaCheckCircle className="text-4xl text-green-500 mb-4" />
+                            <FaCheckCircle className="text-4xl text-main-red mb-4" />
                             <h4 className="text-xl font-semibold mb-4">Jakość</h4>
                             <p className="text-gray-700">Dostarczanie usług najwyższej jakości, które spełniają oczekiwania naszych klientów.</p>
                         </div>
                         <div className="p-6 bg-white rounded-lg shadow-md flex flex-col items-center">
-                            <FaLightbulb className="text-4xl text-yellow-500 mb-4" />
+                            <FaLightbulb className="text-4xl text-main-red mb-4" />
                             <h4 className="text-xl font-semibold mb-4">Indywidualne podejście</h4>
                             <p className="text-gray-700">Traktowanie każdego klienta indywidualnie, dostosowując usługi do jego potrzeb.</p>
                         </div>
                         <div className="p-6 bg-white rounded-lg shadow-md flex flex-col items-center">
-                            <FaRocket className="text-4xl text-blue-500 mb-4" />
+                            <FaClock className="text-4xl text-main-red mb-4" /> {/* Zmieniona ikona na FaClock */}
                             <h4 className="text-xl font-semibold mb-4">Terminowość</h4>
                             <p className="text-gray-700">Rzetelna i terminowa realizacja zleceń, aby klienci mogli cieszyć się efektami naszej pracy.</p>
                         </div>
                         <div className="p-6 bg-white rounded-lg shadow-md flex flex-col items-center">
-                            <FaUserTie className="text-4xl text-indigo-500 mb-4" />
+                            <FaUserTie className="text-4xl text-main-red mb-4" />
                             <h4 className="text-xl font-semibold mb-4">Profesjonalizm</h4>
                             <p className="text-gray-700">Profesjonalne podejście do każdego zadania, gwarantujące wysoką jakość wykonania i obsługi.</p>
                         </div>
                         <div className="p-6 bg-white rounded-lg shadow-md flex flex-col items-center">
-                            <FaTools className="text-4xl text-pink-500 mb-4" />
+                            <FaTools className="text-4xl text-main-red mb-4" />
                             <h4 className="text-xl font-semibold mb-4">Wszechstronność</h4>
                             <p className="text-gray-700">Szeroki zakres usług dostosowanych do różnorodnych potrzeb klientów.</p>
                         </div>
                         <div className="p-6 bg-white rounded-lg shadow-md flex flex-col items-center">
-                            <FaPaintBrush className="text-4xl text-orange-500 mb-4" />
+                            <FaPaintBrush className="text-4xl text-main-red mb-4" />
                             <h4 className="text-xl font-semibold mb-4">Estetyka</h4>
                             <p className="text-gray-700">Dbałość o estetykę i nowoczesny wygląd każdego wnętrza.</p>
                         </div>
                     </div>
                     <div className="mt-8">
                         <p className="text-lg text-gray-700 mb-4">Chcesz dowiedzieć się więcej o usługach?</p>
-                        <button className="bg-main-red text-white px-6 py-3 rounded-full hover:bg-red-600 transition-colors duration-300">
+                        <motion.button
+                            whileHover={{ scale: 1.05 }}
+                            transition={{ duration: 0.3 }}
+                            className="bg-main-red text-white px-6 py-3 rounded-full hover:bg-red-600 transition-colors duration-300"
+                        >
                             Skontaktuj się
-                        </button>
+                        </motion.button>
                     </div>
                 </motion.div>
             </div>
