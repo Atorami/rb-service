@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const About = () => {
     return (
-        <div className="about py-20 bg-gray-50">
+        <div className="about pt-16 md:py-20 bg-gray-50">
             <div className="container mx-auto px-6">
                 <motion.h2
                     initial={{ opacity: 0, y: -20 }}
@@ -16,9 +16,9 @@ const About = () => {
                 </motion.h2>
                 <motion.div
                     initial={{ width: 0 }}
-                    animate={{ width: '15%' }}
+                    animate={{ width: '25%' }}
                     transition={{ duration: 1.2 }}
-                    className="underline bg-main-red h-1 mb-16 mx-auto"
+                    className="underline bg-main-red h-1 mb-12 md:mb-16 mx-auto"
                 ></motion.div>
                 <div className="main-block flex flex-col lg:flex-row justify-between">
                     <motion.div
@@ -53,15 +53,17 @@ const About = () => {
                         <p className="mb-6">
                             Współpraca ze mną to gwarancja solidnego wykonania i najwyższych standardów. Zapraszam do kontaktu, aby omówić Twój projekt i przekonać się o moim profesjonalizmie.
                         </p>
-                        <motion.button
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1, delay: 1.6 }}
-                            onClick={() => window.location.href = 'tel:+48511394565'}
-                            className="bg-main-red text-white py-3 px-8 rounded-full text-lg font-semibold hover:bg-red-600 transition-colors duration-300 cursor-pointer"
-                        >
-                            Skontaktuj się
-                        </motion.button>
+                        <div className="flex justify-center md:justify-start">
+                            <motion.button
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 1, delay: 1.6 }}
+                                onClick={() => window.location.href = 'tel:+48511394565'}
+                                className="bg-main-red text-white py-3 px-8 rounded-full text-lg font-semibold hover:bg-red-600 transition-colors duration-300 cursor-pointer"
+                            >
+                                Skontaktuj się
+                            </motion.button>
+                        </div>
                     </motion.div>
                 </div>
             </div>

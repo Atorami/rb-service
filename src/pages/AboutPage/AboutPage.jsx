@@ -103,7 +103,7 @@ const AboutPage = () => {
                         </div>
                     </div>
                     <div className="mt-8">
-                        <p className="text-lg text-gray-700 mb-4">Chcesz dowiedzieć się więcej o usługach?</p>
+                        <p className="text-lg text-gray-700 mb-4">Chcesz dowiedzieć się więcej ?</p>
                         <motion.button
                             whileHover={{ scale: 1.05 }}
                             transition={{ duration: 0.3 }}

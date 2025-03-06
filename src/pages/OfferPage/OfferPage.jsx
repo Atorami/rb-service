@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import bgImage from '../../assets/img/bg/bg_1.jpg';
-import { FaPaintRoller,FaStamp, FaHammer, FaThLarge, FaLayerGroup, FaRuler } from 'react-icons/fa';
+import { FaPaintRoller, FaStamp, FaHammer, FaThLarge, FaLayerGroup, FaRuler } from 'react-icons/fa';
 
 const offer = [
     {
@@ -101,7 +101,7 @@ const OfferPage = () => {
                     transition={{ duration: 0.6, delay: 1 }}
                     className="mt-12 text-center"
                 >
-                    <h3 className="text-2xl font-semibold mb-6 text-gray-800">Moje Usługi</h3>
+                    <h3 className="text-2xl font-semibold my-20 text-gray-800">Profesjonalne Wykończenia Wnętrz</h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {offer.map((el, index) => (
                             <motion.div
@@ -113,29 +113,30 @@ const OfferPage = () => {
                                 <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105">
                                     <div className="p-6">
                                         <div className="flex itemsjustify-center mb-4 text-main-red text-4xl"
-                                    >
-                                        {el.icon}
+                                            >
+                                                {el.icon}
+                                            </div>
+                                            <h3 className="text-xl font-semibold mb-4 text-gray-800">{el.title}</h3>
+                                            <p className="text-gray-700 leading-relaxed">{el.opis}</p>
+                                        </div>
                                     </div>
-                                    <h3 className="text-xl font-semibold mb-4 text-gray-800">{el.title}</h3>
-                                    <p className="text-gray-700 leading-relaxed">{el.opis}</p>
-                                </div>
-                            </div>
-                        </motion.div>
-                        ))}
+                                </motion.div>
+                            ))}
+                        </div>
+                    </motion.div>
+                    <div className="text-center mt-10">
+                        <motion.button
+                            whileHover={{ scale: 1.05 }}
+                            transition={{ duration: 0.3 }}
+                            onClick={() => window.location.href = 'tel:+48511394565'}
+                            className="bg-main-red hover:bg-red-600 text-white font-bold py-4 px-10 rounded-full text-lg transition duration-300 cursor-pointer"
+                        >
+                            Zapytaj już teraz
+                        </motion.button>
                     </div>
-                </motion.div>
-                <div className="text-center mt-10">
-                    <motion.button
-                        whileHover={{ scale: 1.05 }}
-                        transition={{ duration: 0.3 }}
-                        onClick={() => window.location.href = 'tel:+48511394565'}
-                        className="bg-main-red hover:bg-red-600 text-white font-bold py-4 px-10 rounded-full text-lg transition duration-300 cursor-pointer"
-                    >
-                        Zapytaj już teraz
-                    </motion.button>
                 </div>
             </div>
-        </div>
+        
     );
 };
 

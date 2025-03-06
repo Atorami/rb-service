@@ -19,7 +19,7 @@ const offer = [
 
 const Offer = () => {
     return (
-        <div className="offer py-20 bg-gray-50">
+        <div className="offer py-16 md:py-20 bg-gray-50">
             <div className="container mx-auto px-6">
                 <motion.h2
                     initial={{ opacity: 0, y: -20 }}
@@ -33,7 +33,7 @@ const Offer = () => {
                     initial={{ width: 0 }}
                     animate={{ width: '15%' }}
                     transition={{ duration: 1.2 }}
-                    className="underline bg-main-red h-1 mb-16 mx-auto"
+                    className="underline bg-main-red h-1 mb-12 md:mb-16 mx-auto"
                 ></motion.div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
                     {offer.map((el, index) => (

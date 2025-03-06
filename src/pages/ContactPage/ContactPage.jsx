@@ -57,7 +57,7 @@ const ContactPage = () => {
                             </div>
                             <div className="flex items-center mb-4">
                                 <FaIdCard className="mr-2 text-main-red" />
-                                <p><span className="font-semibold">NIP:</span> 123-456-78-90</p>
+                                <p><span className="font-semibold">NIP:</span> 9552209122</p>
                             </div>
                         </motion.div>
 
@@ -79,11 +79,11 @@ const ContactPage = () => {
                                 </div>
                                 <div className="flex items-center mb-2">
                                     <FaEnvelope className="mr-2 text-main-red" />
-                                    <p><span className="font-semibold">Email 1:</span> contact@rb-service.pl</p>
+                                    <p><span className="font-semibold">Email 1:</span> kontakt@robertbogaczyk.pl</p>
                                 </div>
                                 <div className="flex items-center mb-2">
                                     <FaEnvelope className="mr-2 text-main-red" />
-                                    <p><span className="font-semibold">Email 2:</span> biuro@rb-service.pl</p>
+                                    <p><span className="font-semibold">Email 2:</span> office@robertbogaczyk.pl</p>
                                 </div>
                             </div>
                         </motion.div>

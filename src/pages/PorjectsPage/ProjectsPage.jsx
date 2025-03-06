@@ -1,28 +1,24 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaPlus } from 'react-icons/fa';
 
-
-import bgImage from '../../assets/img/bg/pr_bg.jpg'
-// Импорт изображений
+import bgImage from '../../assets/img/bg/pr_bg.jpg';
 import img1 from '../../assets/img/projects/1.jpg';
-import img2 from "../../assets/img/projects/2.jpg";
-import img3 from "../../assets/img/projects/3.jpg";
-import img4 from "../../assets/img/projects/4.jpg";
-import img5 from "../../assets/img/projects/5.jpg";
-import img6 from "../../assets/img/projects/6.jpg";
-import img7 from "../../assets/img/projects/7.jpg";
-import img8 from "../../assets/img/projects/8.jpg";
-import img9 from "../../assets/img/projects/9.jpg";
-import img10 from "../../assets/img/projects/10.jpg";
-import img11 from "../../assets/img/projects/11.jpg";
-import img12 from "../../assets/img/projects/12.jpg";
-import img13 from "../../assets/img/projects/13.jpg";
-import img14 from "../../assets/img/projects/14.jpg";
-import img15 from "../../assets/img/projects/15.jpg";
-import img16 from "../../assets/img/projects/16.jpg";
+import img2 from '../../assets/img/projects/2.jpg';
+import img3 from '../../assets/img/projects/3.jpg';
+import img4 from '../../assets/img/projects/4.jpg';
+import img5 from '../../assets/img/projects/5.jpg';
+import img6 from '../../assets/img/projects/6.jpg';
+import img7 from '../../assets/img/projects/7.jpg';
+import img8 from '../../assets/img/projects/8.jpg';
+import img9 from '../../assets/img/projects/9.jpg';
+import img10 from '../../assets/img/projects/10.jpg';
+import img11 from '../../assets/img/projects/11.jpg';
+import img12 from '../../assets/img/projects/12.jpg';
+import img13 from '../../assets/img/projects/13.jpg';
+import img14 from '../../assets/img/projects/14.jpg';
+import img15 from '../../assets/img/projects/15.jpg';
+import img16 from '../../assets/img/projects/16.jpg';
 
-// Массив изображений
 const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15, img16];
 
 const ProjectsPage = () => {
@@ -30,7 +26,7 @@ const ProjectsPage = () => {
     const [selectedImage, setSelectedImage] = useState(null);
 
     const loadMoreImages = () => {
-        setVisibleImages(prev => prev + 8);
+        setVisibleImages((prev) => prev + 8);
     };
 
     const handleImageClick = (image) => {
@@ -75,7 +71,7 @@ const ProjectsPage = () => {
                         className="bg-main-red hover:bg-red-600 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 mx-auto block"
                         onClick={loadMoreImages}
                     >
-                        Pokaż więcej
+                         Pokaż więcej
                     </motion.button>
                 )}
             </div>
@@ -85,18 +81,26 @@ const ProjectsPage = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
-                        className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50"
+                        className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50 p-4"
                         onClick={handleCloseModal}
                     >
-                        <motion.img
-                            initial={{ scale: 0.8 }}
-                            animate={{ scale: 1 }}
-                            exit={{ scale: 0.8 }}
-                            src={selectedImage}
-                            alt="Project Preview"
-                            className="max-w-4xl max-h-[90vh] rounded-lg"
-                            onClick={(e) => e.stopPropagation()}
-                        />
+                        <div className="relative">
+                            <motion.img
+                                initial={{ scale: 0.8 }}
+                                animate={{ scale: 1 }}
+                                exit={{ scale: 0.8 }}
+                                src={selectedImage}
+                                alt="Project Preview"
+                                className="max-w-full max-h-full rounded-lg"
+                                onClick={(e) => e.stopPropagation()}
+                            />
+                            <button
+                                onClick={handleCloseModal}
+                                className="absolute top-4 right-4 text-white text-3xl"
+                            >
+                                &times;
+                            </button>
+                        </div>
                     </motion.div>
                 )}
             </AnimatePresence>

@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 const Header = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isDesktop, setIsDesktop] = useState(false);
-    const [logoSize, setLogoSize] = useState('h-24'); // Изначальный размер логотипа
+    const [logoSize, setLogoSize] = useState('h-24');
 
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -61,7 +61,7 @@ const Header = () => {
                     <motion.img
                         src={logo}
                         alt="RB - Robert Bogaczyk"
-                        className={`${logoSize} transition-transform duration-300 transform hover:scale-105`} // Используем logoSize
+                        className={`${logoSize} transition-transform duration-300 transform hover:scale-105`}
                     />
                 </Link>
                 {isDesktop && (

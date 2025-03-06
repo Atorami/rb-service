@@ -26,7 +26,7 @@ const Hero = () => {
                 autoPlay
                 loop
                 muted
-                playsInline // Добавлен атрибут playsInline
+                playsInline
                 className="absolute inset-0 w-full h-full object-cover"
             >
                 <source src={videoBg} type="video/mp4" />
@@ -45,7 +45,7 @@ const Hero = () => {
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 1, delay: 0.3 }}
-                    className="text-white text-4xl md:text-6xl font-bold mb-5 leading-tight"
+                    className="text-white text-4xl md:text-6xl font-bold mb-5 px-2 leading-tight"
                 >
                     Profesjonalne Remonty z Pasją i Precyzją
                 </motion.h1>
@@ -61,7 +61,7 @@ const Hero = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 1.2 }}
-                    className="text-gray-300 text-lg max-w-2xl leading-relaxed"
+                    className="text-gray-300 text-lg max-w-2xl leading-relaxed px-2"
                 >
                     Kompleksowe usługi remontowe, od projektowania po wykończenie. <br/> Doświadczenie i zaangażowanie gwarantują najwyższą jakość i satysfakcję.
                 </motion.p>

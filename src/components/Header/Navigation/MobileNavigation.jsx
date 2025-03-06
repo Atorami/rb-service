@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { FaTimes, FaHome, FaWrench, FaLayerGroup, FaInfoCircle, FaEnvelopeOpenText, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaTimes, FaHome, FaChevronRight, FaEnvelopeOpenText, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 
 const MobileNavigation = ({ closeMobileMenu }) => {
     return (
@@ -42,7 +42,7 @@ const MobileNavigation = ({ closeMobileMenu }) => {
                             }
                             onClick={closeMobileMenu}
                         >
-                            <FaWrench className="mr-4" /> Usługi
+                            <FaChevronRight className="mr-4" /> Usługi
                         </NavLink>
                     </li>
                     <li className="mb-6">
@@ -55,7 +55,7 @@ const MobileNavigation = ({ closeMobileMenu }) => {
                             }
                             onClick={closeMobileMenu}
                         >
-                            <FaLayerGroup className="mr-4" /> Projekty
+                            <FaChevronRight className="mr-4" /> Projekty
                         </NavLink>
                     </li>
                     <li className="mb-6">
@@ -68,7 +68,7 @@ const MobileNavigation = ({ closeMobileMenu }) => {
                             }
                             onClick={closeMobileMenu}
                         >
-                            <FaInfoCircle className="mr-4" /> O Firmie
+                            <FaChevronRight className="mr-4" /> O Firmie
                         </NavLink>
                     </li>
                     <li>
@@ -81,7 +81,7 @@ const MobileNavigation = ({ closeMobileMenu }) => {
                             }
                             onClick={closeMobileMenu}
                         >
-                            <FaEnvelopeOpenText className="mr-4" /> Kontakt
+                            <FaChevronRight className="mr-4" /> Kontakt
                         </NavLink>
                     </li>
                 </ul>
@@ -94,7 +94,7 @@ const MobileNavigation = ({ closeMobileMenu }) => {
                     </li>
                     <li className='flex items-center'>
                         <FaEnvelope className="mr-2" />
-                        <a href="mailto:contact@rb-service.pl" className="text-sm" onClick={closeMobileMenu}>contact@rb-service.pl</a>
+                        <a href="mailto:kontakt@robertbogaczyk.pl" className="text-sm" onClick={closeMobileMenu}>kontakt@robertbogaczyk.pl</a>
                     </li>
                     <li className='flex items-center'>
                         <FaMapMarkerAlt className="mr-2" />

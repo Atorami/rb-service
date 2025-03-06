@@ -12,7 +12,7 @@ const Subheader = () => {
                     </li>
                     <li className='mr-8 flex items-center'>
                         <FaEnvelope className="mr-2" />
-                        <a href="mailto:contact@rb-service.pl" className="text-sm">contact@rb-service.pl</a>
+                        <a href="mailto:kontakt@robertbogaczyk.pl" className="text-sm">kontakt@robertbogaczyk.pl</a>
                     </li>
                     <li className='flex items-center'>
                         <FaPhoneAlt className="mr-2" />
