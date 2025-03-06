@@ -62,6 +62,7 @@ const Header = () => {
                         src={logo}
                         alt="RB - Robert Bogaczyk"
                         className={`${logoSize} transition-transform duration-300 transform hover:scale-105`}
+                        loading='lazy'
                     />
                 </Link>
                 {isDesktop && (

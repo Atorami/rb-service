@@ -1,21 +1,48 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet';
 import { FaCheckCircle, FaLightbulb, FaClock, FaUserTie, FaTools, FaPaintBrush } from 'react-icons/fa';
-import bgImage from '../../assets/img/about/about_bg3.jpg';
+import bgImage from '../../assets/img/bg/bg_4.jpg';
 import img from '../../assets/img/about/about_img.jpeg';
 
 const AboutPage = () => {
     return (
         <div className="font-sans text-gray-800">
+            <Helmet>
+                <title>O Firmie | Profesjonalne Wykończenia Wnętrz - Robert Bogaczyk</title>
+                <meta name="description" content="Poznaj Roberta Bogaczyka, doświadczonego specjalistę od prac remontowo-wykończeniowych. Solidność, precyzja i dbałość o detale to nasze priorytety." />
+                <meta name="keywords" content="o firmie, Robert Bogaczyk, remonty, wykończenia wnętrz, profesjonalizm, jakość, Szczecin" />
+            </Helmet>
             <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
-                className="relative h-[400px] flex justify-center items-center text-center text-white bg-cover bg-no-repeat bg-center"
+                className="relative h-[500px] flex flex-col justify-center items-center text-center text-white bg-cover bg-no-repeat bg-center md:bg-[bottom]"
                 style={{ backgroundImage: `url(${bgImage})` }}
             >
-                <div className="absolute inset-0 bg-black opacity-40"></div>
-                <h1 className="text-5xl font-bold text-shadow-lg relative z-10">O Firmie</h1>
+                <div className="absolute inset-0 bg-gradient-to-b from-black to-transparent opacity-60"></div>
+                <motion.h1
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 1, delay: 0.4 }}
+                    className="text-6xl md:text-8xl font-bold text-shadow-lg relative z-10"
+                >
+                    O Firmie
+                </motion.h1>
+                <motion.p
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: 0.8 }}
+                    className="text-lg md:text-xl relative z-10 mt-4"
+                >
+                    Solidność, precyzja i dbałość o każdy detal
+                </motion.p>
+                <motion.div
+                    initial={{ width: 0 }}
+                    animate={{ width: '20%' }}
+                    transition={{ duration: 1.5, delay: 1.2 }}
+                    className="h-1 bg-main-red rounded-full mt-6 relative z-10"
+                ></motion.div>
             </motion.div>
             <div className="container mx-auto px-4 py-12 max-w-5xl">
                 <motion.div

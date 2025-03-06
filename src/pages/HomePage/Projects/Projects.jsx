@@ -110,7 +110,7 @@ const Projects = () => {
                                     exit={{ opacity: 0, x: i * 20 }}
                                     transition={{ ease: "easeInOut", duration: 0.3 }}
                                 >
-                                    <img src={img} alt={`Project ${i + 1}`} className="w-full h-64 object-cover" />
+                                    <img src={img} alt={`Project ${i + 1}`} className="w-full h-64 object-cover" loading="lazy" />
                                 </motion.div>
                             ))}
                         </div>
@@ -142,6 +142,7 @@ const Projects = () => {
                                 animate={{ scale: 1 }}
                                 exit={{ scale: 0.5 }}
                                 transition={{ ease: "easeInOut", duration: 0.4 }}
+                                loading="lazy"
                             />
                             <button className="absolute top-4 right-4 text-white text-2xl" onClick={() => setSelectedImage(null)}>
                                 X

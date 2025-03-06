@@ -1,24 +1,51 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet';
 import {
     FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaUser, FaBuilding,
     FaFacebook, FaLinkedin, FaIdCard
 } from 'react-icons/fa';
 
-import bgImage from '../../assets/img/contact/contact_bg.jpg';
+import bgImage from '../../assets/img/bg/bg_3.jpg';
 
 const ContactPage = () => {
     return (
         <div className="font-sans text-gray-800">
+            <Helmet>
+                <title>Kontakt | Profesjonalne Wykończenia Wnętrz - Robert Bogaczyk</title>
+                <meta name="description" content="Skontaktuj się z Robertem Bogaczykiem, specjalistą od wykończeń wnętrz. Adres, telefon, e-mail oraz media społecznościowe. Zapraszamy do kontaktu!" />
+                <meta name="keywords" content="kontakt, Robert Bogaczyk, wykończenia wnętrz, Szczecin, usługi budowlane, adres, telefon, email, Facebook, LinkedIn" />
+            </Helmet>
             <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
-                className="relative h-[400px] flex justify-center items-center text-center text-white bg-cover bg-no-repeat bg-center"
+                className="relative h-[500px] flex flex-col justify-center items-center text-center text-white bg-cover bg-no-repeat bg-[center_left_-35rem] md:bg-center"
                 style={{ backgroundImage: `url(${bgImage})` }}
             >
-                <div className="absolute inset-0 bg-black opacity-40"></div>
-                <h1 className="text-5xl font-bold text-shadow-lg relative z-10">Kontakt</h1>
+                <div className="absolute inset-0 bg-gradient-to-b from-black to-transparent opacity-60"></div>
+                <motion.h1
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 1, delay: 0.4 }}
+                    className="text-6xl md:text-8xl font-bold text-shadow-lg relative z-10"
+                >
+                    Kontakt
+                </motion.h1>
+                <motion.p
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: 0.8 }}
+                    className="text-lg md:text-xl relative z-10 mt-4"
+                >
+                    Twoja satysfakcja zaczyna się od kontaktu
+                </motion.p>
+                <motion.div
+                    initial={{ width: 0 }}
+                    animate={{ width: '20%' }}
+                    transition={{ duration: 1.5, delay: 1.2 }}
+                    className="h-1 bg-main-red rounded-full mt-6 relative z-10"
+                ></motion.div>
             </motion.div>
             <div className="container mx-auto px-4 py-12 max-w-6xl">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

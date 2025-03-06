@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import bgImage from '../../assets/img/bg/bg_1.jpg';
-import { FaPaintRoller, FaStamp, FaHammer, FaThLarge, FaLayerGroup, FaRuler } from 'react-icons/fa';
+import { FaPaintRoller, FaStamp, FaHammer, FaThLarge, FaLayerGroup, FaRuler, FaQuoteRight, FaQuoteLeft } from 'react-icons/fa';
+import { Helmet } from 'react-helmet';
 
 const offer = [
     {
@@ -45,15 +46,41 @@ const offer = [
 const OfferPage = () => {
     return (
         <div className="font-sans text-gray-800">
+            <Helmet>
+                <title>Usługi | Profesjonalne Remonty - Robert Bogaczyk</title>
+                <meta name="description" content="Oferuje kompleksowe usługi wykończeniowe: malowanie, szpachlowanie, zabudowy GK, układanie płytek i paneli. Profesjonalne remonty wnętrz z gwarancją jakości." />
+                <meta name="keywords" content="usługi wykończeniowe, remonty, malowanie, szpachlowanie, zabudowy GK, układanie płytek, panele, Robert Bogaczyk" />
+            </Helmet>
             <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
-                className="relative h-[400px] flex justify-center items-center text-center text-white bg-cover bg-no-repeat bg-bottom"
+                className="relative h-[500px] flex flex-col justify-center items-center text-center text-white bg-cover bg-no-repeat bg-bottom"
                 style={{ backgroundImage: `url(${bgImage})` }}
             >
-                <div className="absolute inset-0 bg-black opacity-40"></div>
-                <h1 className="text-5xl font-bold text-shadow-lg relative z-10">Usługi</h1>
+                <div className="absolute inset-0 bg-gradient-to-b from-black to-transparent opacity-60"></div>
+                <motion.h1
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 1, delay: 0.4 }}
+                    className="text-6xl md:text-8xl font-bold text-shadow-lg relative z-10"
+                >
+                    Usługi
+                </motion.h1>
+                <motion.p
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: 0.8 }}
+                    className="text-lg md:text-xl relative z-10 mt-4"
+                >
+                   Profesjonalizm w każdym detalu
+                </motion.p>
+                <motion.div
+                    initial={{ width: 0 }}
+                    animate={{ width: '20%' }}
+                    transition={{ duration: 1.5, delay: 1.2 }}
+                    className="h-1 bg-main-red rounded-full mt-6 relative z-10"
+                ></motion.div>
             </motion.div>
             <div className="container mx-auto px-4 py-12 max-w-5xl">
                 <motion.h2
@@ -101,7 +128,23 @@ const OfferPage = () => {
                     transition={{ duration: 0.6, delay: 1 }}
                     className="mt-12 text-center"
                 >
-                    <h3 className="text-2xl font-semibold my-20 text-gray-800">Profesjonalne Wykończenia Wnętrz</h3>
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.8 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 1, delay: 0.4 }}
+                        className="text-lg md:text-3xl font-semibold text-gray-800 italic mb-10"
+                        
+                    >
+                        <FaQuoteLeft className="inline mr-2 text-main-red" />
+                            <p className='inline mx-4 my-10'>Solidność, Doświadczenie, Zaufanie</p>
+                        <FaQuoteRight className="inline ml-2 text-main-red" />
+                    </motion.div>
+                    <div className="text-gray-600 text-md py-4 mb-10 px-12 md:px-54">
+                        Te trzy wartości są dla nas drogowskazem w codziennej pracy. Dzięki nim, możemy oferować usługi
+                        na najwyższym poziomie, spełniając oczekiwania nawet najbardziej wymagających klientów.
+                        Zapraszamy do współpracy, która zaowocuje pięknym i trwałym wnętrzem oraz do zapoznania się z moją ofertą.
+                    </div>
+                    <h2 className="text-3xl font-semibold mb-12 md:mb-20 text-main-red text-center">Zapoznaj się z moją ofertą</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {offer.map((el, index) => (
                             <motion.div
