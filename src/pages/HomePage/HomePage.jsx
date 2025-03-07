@@ -1,6 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
+
 import Hero from "./Hero/Hero";
 import About from "./About/About";
 import Offer from './Offer/Offer';
@@ -8,6 +9,7 @@ import How from './How/How';
 import CalltoAction from './CallToAction/CallToAction';
 import Projects from './Projects/Projects';
 import Feedback from './Feedback/Feedback';
+import Goals from './Goals/Goals';
 
 const HomePage = () => {
     return (
@@ -23,7 +25,9 @@ const HomePage = () => {
             <How />
             <CalltoAction />
             <Projects />
-            <Feedback />
+            <Goals/>
+            
+            {/* <Feedback /> */}
         </>
     );
 };

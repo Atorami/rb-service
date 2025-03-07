@@ -135,9 +135,9 @@ const OfferPage = () => {
                         className="text-lg md:text-3xl font-semibold text-gray-800 italic mb-10"
                         
                     >
-                        <FaQuoteLeft className="inline mr-2 text-main-red" />
-                            <p className='inline mx-4 my-10'>Solidność, Doświadczenie, Zaufanie</p>
-                        <FaQuoteRight className="inline ml-2 text-main-red" />
+                        <FaQuoteLeft className="inline mr-1 md:mr-2 text-main-red" />
+                            <p className='inline mx-2 md:mx-4 my-10'>Solidność, Doświadczenie, Zaufanie</p>
+                        <FaQuoteRight className="inline ml-1 md:ml-2 text-main-red" />
                     </motion.div>
                     <div className="text-gray-600 text-md py-4 mb-10 px-12 md:px-54">
                         Te trzy wartości są dla nas drogowskazem w codziennej pracy. Dzięki nim, możemy oferować usługi

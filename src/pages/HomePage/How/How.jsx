@@ -52,7 +52,7 @@ const How = () => {
     }, []);
 
     return (
-        <div ref={sectionRef} className="how py-16 md:py-20 bg-gray-50">
+        <div ref={sectionRef} className="how pt-20 bg-gray-50">
             <div className="container mx-auto px-6">
                 <motion.h2
                     initial={{ opacity: 0, y: -20 }}

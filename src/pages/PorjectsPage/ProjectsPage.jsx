@@ -49,7 +49,7 @@ const ProjectsPage = () => {
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
-                className="relative h-[500px] flex flex-col justify-center items-center text-center text-white bg-cover bg-no-repeat bg-center md:bg-[center_-10rem]"
+                className="relative h-[500px] flex flex-col justify-center items-center text-center text-white bg-cover bg-no-repeat bg-center md:bg-[center_-10rem] 2xl:bg-center"
                 style={{ backgroundImage: `url(${bgImage})` }}
             >
                 <div className="absolute inset-0 bg-gradient-to-b from-black to-transparent opacity-60"></div>

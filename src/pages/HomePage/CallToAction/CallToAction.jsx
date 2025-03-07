@@ -1,10 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import img from '../../../assets/img/bg/bg_2.jpg';
+import img from '../../../assets/img/bg/bg_call.jpg';
 
 const CallToAction = () => {
     return (
-        <div className="cta relative py-20 text-white text-center overflow-hidden">
+        <div className="cta relative py-16 mt-20 text-white text-center overflow-hidden">
             <div className="absolute inset-0">
                 <img
                     src={img}

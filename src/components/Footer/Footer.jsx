@@ -5,7 +5,7 @@ import logo from '../../assets/img/logo_blue_new.png';
 const Footer = () => {
   return (
     <footer className="footer bg-main-blue text-white pt-16">
-      <div className="container mx-auto flex flex-col px-8 md:px-0">
+      <div className="container mx-auto flex flex-col px-8">
         <div className="footer-main flex flex-col md:flex-row items-start">
           <div className="main-block-1 md:mr-16 mb-4 md:mb-0">
             <h5 className="footer-title text-xl font-bold mb-2">Navigacja</h5>
